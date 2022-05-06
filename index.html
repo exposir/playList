@@ -7,14 +7,24 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- require APlayer -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
     <!-- require MetingJS -->
-    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+    <script src="./metingjs.js"></script>
 
-    <meting-js server="netease" type="playlist" id="7421633017"> </meting-js>
+    <meting-js
+      server="netease"
+      type="playlist"
+      id="7421633017"
+      autoplay="true"
+      order="random"
+      mini="true"
+    >
+    </meting-js>
+    <button onclick="window.ap.skipForward()">next</button>
   </body>
 </html>
